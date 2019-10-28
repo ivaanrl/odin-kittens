@@ -1,0 +1,14 @@
+<h1>Kitten list:</h1>
+
+<% @kittens.each do |f| %>
+    name: <%= f.name%>
+    age: <%=f.age%>
+    cuteness: <%=f.cuteness%>
+    softness: <%=f.softness%>
+    <%= link_to 'Edit', "kittens/#{f.id}/edit"%>
+    <%= link_to 'Delete', f, :method => :delete %>
+    <br><br>
+
+<% end %>
+
+<%= link_to "Register a new kitten!", '/new'%>

@@ -1,0 +1,10 @@
+Name : <%= @kitten.name%><br><br>
+Age : <%= @kitten.age%><br><br>
+Cuteness : <%= @kitten.cuteness%><br><br>
+Softness : <%= @kitten.softness%><br><br>
+
+<%= link_to "Edit attributes", "#{@kitten.id}/edit" %>
+<br><br>
+<%= link_to "delete", @kitten, :method => :delete %>
+<br><br>
+<%= link_to "index", root_url%>
